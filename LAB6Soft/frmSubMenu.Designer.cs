@@ -52,6 +52,7 @@
             this.iconActual = new FontAwesome.Sharp.IconPictureBox();
             this.pnlVentana = new System.Windows.Forms.Panel();
             this.pnlSombra = new System.Windows.Forms.Panel();
+            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             this.barraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRest)).BeginInit();
@@ -68,7 +69,6 @@
             // barraTitulo
             // 
             this.barraTitulo.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.barraTitulo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.barraTitulo.Controls.Add(this.pictureBox1);
             this.barraTitulo.Controls.Add(this.lblBarra);
             this.barraTitulo.Controls.Add(this.btnRest);
@@ -110,7 +110,7 @@
             this.btnRest.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRest.Enabled = false;
             this.btnRest.Image = ((System.Drawing.Image)(resources.GetObject("btnRest.Image")));
-            this.btnRest.Location = new System.Drawing.Point(1358, 4);
+            this.btnRest.Location = new System.Drawing.Point(1362, 4);
             this.btnRest.Margin = new System.Windows.Forms.Padding(4);
             this.btnRest.Name = "btnRest";
             this.btnRest.Size = new System.Drawing.Size(33, 31);
@@ -124,7 +124,7 @@
             // 
             this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(1317, 4);
+            this.btnMinimizar.Location = new System.Drawing.Point(1321, 4);
             this.btnMinimizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(33, 31);
@@ -137,7 +137,7 @@
             // 
             this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(1358, 4);
+            this.btnMaximizar.Location = new System.Drawing.Point(1362, 4);
             this.btnMaximizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnMaximizar.Name = "btnMaximizar";
             this.btnMaximizar.Size = new System.Drawing.Size(33, 31);
@@ -149,7 +149,7 @@
             // 
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(1400, 4);
+            this.btnCerrar.Location = new System.Drawing.Point(1404, 4);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(33, 31);
@@ -413,6 +413,7 @@
             // 
             this.pnlBarra.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.pnlBarra.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlBarra.Controls.Add(this.linkLabel4);
             this.pnlBarra.Controls.Add(this.lblActual);
             this.pnlBarra.Controls.Add(this.iconActual);
             this.pnlBarra.Dock = System.Windows.Forms.DockStyle.Top;
@@ -450,6 +451,7 @@
             // 
             // pnlVentana
             // 
+            this.pnlVentana.CausesValidation = false;
             this.pnlVentana.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlVentana.Location = new System.Drawing.Point(293, 103);
             this.pnlVentana.Margin = new System.Windows.Forms.Padding(4);
@@ -466,6 +468,19 @@
             this.pnlSombra.Name = "pnlSombra";
             this.pnlSombra.Size = new System.Drawing.Size(963, 10);
             this.pnlSombra.TabIndex = 5;
+            // 
+            // linkLabel4
+            // 
+            this.linkLabel4.AutoSize = true;
+            this.linkLabel4.Font = new System.Drawing.Font("Haettenschweiler", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel4.LinkColor = System.Drawing.Color.White;
+            this.linkLabel4.Location = new System.Drawing.Point(718, 10);
+            this.linkLabel4.Name = "linkLabel4";
+            this.linkLabel4.Size = new System.Drawing.Size(117, 26);
+            this.linkLabel4.TabIndex = 20;
+            this.linkLabel4.TabStop = true;
+            this.linkLabel4.Text = " Detracciones";
+            this.linkLabel4.VisitedLinkColor = System.Drawing.Color.White;
             // 
             // frmSubMenu
             // 
@@ -521,8 +536,9 @@
         private System.Windows.Forms.Panel pnlBarra;
         private System.Windows.Forms.Label lblActual;
         private FontAwesome.Sharp.IconPictureBox iconActual;
-        private System.Windows.Forms.Panel pnlVentana;
         private System.Windows.Forms.Panel pnlSombra;
         private System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.Panel pnlVentana;
+        private System.Windows.Forms.LinkLabel linkLabel4;
     }
 }

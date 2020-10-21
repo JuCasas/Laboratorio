@@ -12,6 +12,10 @@ namespace LAB6Soft
 {
     public partial class FrmGestionReportes : Form
     {
+        private int num=0;
+
+        public int Num { get => num; set => num = value; }
+
         public FrmGestionReportes()
         {
             InitializeComponent();
@@ -19,8 +23,11 @@ namespace LAB6Soft
 
         private void ButtonOrdenCompra_Click(object sender, EventArgs e)
         {
+            this.Hide();
             FrmReporteOrdenCompra form = new FrmReporteOrdenCompra();
+            
             form.ShowDialog();
+
 
         }
 
@@ -28,6 +35,8 @@ namespace LAB6Soft
         {
             FrmReporteActividadOperador form = new FrmReporteActividadOperador();
             form.ShowDialog();
+            
+            
         }
 
         private void ButtonMetodosPago_Click(object sender, EventArgs e)
@@ -67,7 +76,7 @@ namespace LAB6Soft
 
         private void ButtonActOperadores_Click(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+           
         }
 
         private void ButtonMetodosPago_Click(object sender, LinkLabelLinkClickedEventArgs e)
@@ -76,6 +85,11 @@ namespace LAB6Soft
         }
 
         private void ButtonDetraccion_Click(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
         {
 
         }

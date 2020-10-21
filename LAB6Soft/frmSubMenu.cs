@@ -28,7 +28,6 @@ namespace LAB6Soft
             pnlMenulateral.Controls.Add(pnlIzq);
             this.Text = string.Empty;
             this.DoubleBuffered = true;
-            this.ShowDialog();
 
         }
         private struct Colores
@@ -113,7 +112,9 @@ namespace LAB6Soft
         private void btnReporte_Click(object sender, EventArgs e)
         {
             ActivarBoton(sender, Colores.color5);
-            AbrirHijo(new FrmGestionReportes());
+            FrmGestionReportes fGest = new FrmGestionReportes();
+            AbrirHijo(fGest);
+            
         }
 
         private void btnUsuarios_Click(object sender, EventArgs e)
@@ -194,6 +195,11 @@ namespace LAB6Soft
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void linkLabel1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

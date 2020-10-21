@@ -25,7 +25,7 @@ namespace LAB6Soft
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
         private void btnMaximizar_Click(object sender, EventArgs e)
@@ -89,12 +89,11 @@ namespace LAB6Soft
 
         private void btnOC_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
+
             frmSubMenu form = new frmSubMenu();
+            
             form.ShowDialog();
-            this.WindowState = FormWindowState.Minimized;
-
-
 
         }
 
