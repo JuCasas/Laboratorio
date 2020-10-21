@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{10E8DF8A-F64C-46E8-A308-C90D0DF05816}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LAB6Soft</RootNamespace>
+    <AssemblyName>LAB6Soft</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\FontAwesome.Sharp.5.15.1\lib\net48\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmActualizarTipoCambio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActualizarTipoCambio.designer.cs">
+      <DependentUpon>frmActualizarTipoCambio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestionReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGestionReportes.Designer.cs">
+      <DependentUpon>FrmGestionReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuPrincipal.Designer.cs">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProveedorAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProveedorAgregar.designer.cs">
+      <DependentUpon>frmProveedorAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReporteActividadOperador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReporteActividadOperador.Designer.cs">
+      <DependentUpon>FrmReporteActividadOperador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReporteMetodoPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReporteMetodoPago.Designer.cs">
+      <DependentUpon>FrmReporteMetodoPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReporteOrdenCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReporteOrdenCompra.Designer.cs">
+      <DependentUpon>FrmReporteOrdenCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSubMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubMenu.Designer.cs">
+      <DependentUpon>frmSubMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmActualizarTipoCambio.resx">
+      <DependentUpon>frmActualizarTipoCambio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestionReportes.resx">
+      <DependentUpon>FrmGestionReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuPrincipal.resx">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProveedorAgregar.resx">
+      <DependentUpon>frmProveedorAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReporteActividadOperador.resx">
+      <DependentUpon>FrmReporteActividadOperador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReporteMetodoPago.resx">
+      <DependentUpon>FrmReporteMetodoPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReporteOrdenCompra.resx">
+      <DependentUpon>FrmReporteOrdenCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSubMenu.resx">
+      <DependentUpon>frmSubMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-accounting-accountant-computer-icons-bookkeeping-f-finance-5abc92d44cb875.8221489015223077963143.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3961494681_a4fca1a1-5ef9-4440-93f7-764ea249e4f6.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
