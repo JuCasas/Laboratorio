@@ -150,9 +150,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.pictureBox1.Image = global::LAB6Soft.Properties.Resources._3961494681_a4fca1a1_5ef9_4440_93f7_764ea249e4f6;
-            this.pictureBox1.Location = new System.Drawing.Point(574, 96);
+            this.pictureBox1.Location = new System.Drawing.Point(553, 82);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(118, 122);
+            this.pictureBox1.Size = new System.Drawing.Size(160, 132);
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
