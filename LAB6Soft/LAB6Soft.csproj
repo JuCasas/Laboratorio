@@ -105,6 +105,12 @@
     <Compile Include="frmSubMenu.Designer.cs">
       <DependentUpon>frmSubMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmUsuarioAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuarioAgregar.designer.cs">
+      <DependentUpon>frmUsuarioAgregar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -144,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSubMenu.resx">
       <DependentUpon>frmSubMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuarioAgregar.resx">
+      <DependentUpon>frmUsuarioAgregar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
