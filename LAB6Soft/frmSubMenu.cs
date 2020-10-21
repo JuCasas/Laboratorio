@@ -93,6 +93,7 @@ namespace LAB6Soft
         {
             ActivarBoton(sender, Colores.color1);
             //AbrirHijo(new frmOrdenCompra());
+            //comentario
         }
 
         private void btnCompPago_Click(object sender, EventArgs e)
