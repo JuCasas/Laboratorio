@@ -57,6 +57,18 @@
     <Compile Include="frmActualizarTipoCambio.designer.cs">
       <DependentUpon>frmActualizarTipoCambio.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBuscarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarProveedor.Designer.cs">
+      <DependentUpon>frmBuscarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarUsuario.Designer.cs">
+      <DependentUpon>frmBuscarUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmGestionReportes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +138,12 @@
   <ItemGroup>
     <EmbeddedResource Include="frmActualizarTipoCambio.resx">
       <DependentUpon>frmActualizarTipoCambio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarProveedor.resx">
+      <DependentUpon>frmBuscarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarUsuario.resx">
+      <DependentUpon>frmBuscarUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmGestionReportes.resx">
       <DependentUpon>FrmGestionReportes.cs</DependentUpon>

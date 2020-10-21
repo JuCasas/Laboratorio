@@ -56,3 +56,4 @@ C:\Users\HP\Desktop\Lab6\LAB6Soft\obj\Debug\LAB6Soft.csproj.CoreCompileInputs.ca
 C:\Users\HP\Desktop\Lab6\LAB6Soft\obj\Debug\LAB6Soft.csproj.CopyComplete
 C:\Users\HP\Desktop\Lab6\LAB6Soft\obj\Debug\LAB6Soft.exe
 C:\Users\HP\Desktop\Lab6\LAB6Soft\obj\Debug\LAB6Soft.pdb
+C:\Users\HP\Desktop\Lab6\LAB6Soft\obj\Debug\formsLab6.frmAgregarUsuario.resources
