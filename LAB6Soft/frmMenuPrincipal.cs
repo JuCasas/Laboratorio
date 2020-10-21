@@ -18,7 +18,7 @@ namespace LAB6Soft
         public frmMenuPrincipal()
         {
             InitializeComponent();
-            this.DoubleBuffered = true;
+         //   this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
 
         }
@@ -91,8 +91,10 @@ namespace LAB6Soft
         {
             
             frmSubMenu form = new frmSubMenu();
+            this.Hide();
             form.ShowDialog();
-            this.WindowState = FormWindowState.Minimized;
+            this.Close();
+            
 
 
 
@@ -101,6 +103,14 @@ namespace LAB6Soft
         private void btnMoneda_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnProveedor_Click(object sender, EventArgs e)
+        {
+            frmSubMenu form = new frmSubMenu();
+            this.Hide();
+            form.ShowDialog();
+            this.Close();
         }
     }
 }

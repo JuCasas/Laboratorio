@@ -17,18 +17,19 @@ namespace LAB6Soft
     {
         private IconButton btnActual;
         private Panel pnlIzq;
-        private Form hijoAct;
+        private Form hijoAct=null;
         public frmSubMenu()
         {
             InitializeComponent();
+            pdiseno();
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             pnlIzq = new Panel();
             pnlIzq.Size = new Size(7, 40);
 
             pnlMenulateral.Controls.Add(pnlIzq);
-            this.Text = string.Empty;
-            this.DoubleBuffered = true;
-            this.ShowDialog();
+           // this.Text = string.Empty;
+            //this.DoubleBuffered = true;
+            //this.ShowDialog();
 
         }
         private struct Colores
@@ -42,7 +43,36 @@ namespace LAB6Soft
             public static Color color6 = Color.FromArgb(24, 161, 251);
         }
 
+        private void pdiseno() {
+            pnlSubComp.Visible = false;
+            pnlSubProveedor.Visible = false;
+            pnlSubReps.Visible = false;
+            pnlSubUsuarios.Visible = false;
+            pnlSubVencer.Visible = false;
+        }
+        private void ocultar() { 
+            if (pnlSubComp.Visible == true)
+                pnlSubComp.Visible = false;
+            if (pnlSubProveedor.Visible ==true)
+                pnlSubProveedor.Visible = false;
+            if (pnlSubReps.Visible == true)
+                pnlSubReps.Visible = false;
+            if (pnlSubUsuarios.Visible ==true )
+                pnlSubUsuarios.Visible = false;
+            if (pnlSubVencer.Visible == true)
+                pnlSubVencer.Visible = false;
+        }
+        private void mostrar(Panel submenu) {
+            if (submenu.Visible == false)
+            {
+                ocultar();
+                submenu.Visible = true;
+            }
+            else
+                submenu.Visible = false;
+        }
         private void ActivarBoton(object sender, Color color) {
+            //int i = 0;
             if (sender != null)
             {
                 DesactivarBoton();
@@ -59,12 +89,14 @@ namespace LAB6Soft
                 pnlIzq.BringToFront();
                 iconActual.IconChar = btnActual.IconChar;
                 iconActual.IconColor = color;
+             //   i = 1;
                 
             }
+           // return i;
         }
         private void DesactivarBoton() {
             if (btnActual != null) {
-                btnActual.BackColor = Color.DodgerBlue;
+                btnActual.BackColor = Color.DarkSlateBlue;
                 btnActual.ForeColor = Color.White;
                 btnActual.TextAlign = ContentAlignment.MiddleLeft;
                 btnActual.IconColor = Color.White;
@@ -92,6 +124,8 @@ namespace LAB6Soft
         private void btnOC_Click(object sender, EventArgs e)
         {
             ActivarBoton(sender, Colores.color1);
+            ocultar();
+            //mostrar(pnlSubComp);
             //AbrirHijo(new frmOrdenCompra());
             //comentario
         }
@@ -103,7 +137,7 @@ namespace LAB6Soft
 
         private void btnVencer_Click(object sender, EventArgs e)
         {
-            ActivarBoton(sender, Colores.color3);
+             ActivarBoton(sender, Colores.color3);
         }
 
         private void btnDocPago_Click(object sender, EventArgs e)
@@ -113,15 +147,15 @@ namespace LAB6Soft
 
         private void btnReporte_Click(object sender, EventArgs e)
         {
-            ActivarBoton(sender, Colores.color5);
+             ActivarBoton(sender, Colores.color5);
             AbrirHijo(new FrmGestionReportes());
         }
 
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
             ActivarBoton(sender, Colores.color6);
-            btnProveedores.Location = new Point(0, 379);
-            btnMoneda.Location = new Point(0, 419);
+          //  btnProveedores.Location = new Point(0, 379);
+          //  btnMoneda.Location = new Point(0, 419);
           //  pnlSubUsuarios.Visible = true;
         }
 
@@ -195,6 +229,111 @@ namespace LAB6Soft
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnVencer_Click_1(object sender, EventArgs e)
+        {
+            ActivarBoton(sender, Colores.color3);
+            //mostrar(pnlSubComp);
+            //AbrirHijo(new frmOrdenCompra());
+            //comentario
+        }
+
+        
+
+        private void btnCompPago_Click_1(object sender, EventArgs e)
+        {
+            ActivarBoton(sender, Colores.color2);
+            ocultar();
+            //mostrar(pnlSubComp);
+            //AbrirHijo(new frmOrdenCompra());
+            //comentario
+        }
+
+        private void btnDocPago_Click_1(object sender, EventArgs e)
+        {
+            ActivarBoton(sender, Colores.color4);
+            //mostrar(pnlSubComp);
+            //AbrirHijo(new frmOrdenCompra());
+            //comentario
+        }
+
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            ActivarBoton(sender, Colores.color5);
+            mostrar(pnlSubReps);
+            //mostrar(pnlSubComp);
+            //AbrirHijo(new frmOrdenCompra());
+            //comentario
+        }
+
+        private void btnUsuarios_Click_1(object sender, EventArgs e)
+        {
+            ActivarBoton(sender, Colores.color6);
+            mostrar(pnlSubUsuarios);
+
+           // DesactivarBoton();
+            //mostrar(pnlSubComp);
+            //AbrirHijo(new frmOrdenCompra());
+            //comentario
+        }
+
+        private void btnProveedores_Click_1(object sender, EventArgs e)
+        {
+            ActivarBoton(sender, Colores.color1);
+            mostrar(pnlSubProveedor);
+            lblActual.Text = btnActual.Text;
+            //mostrar(pnlSubComp);
+            //AbrirHijo(new frmOrdenCompra());
+            //comentario
+        }
+
+        private void btnMoneda_Click(object sender, EventArgs e)
+        {
+            ActivarBoton(sender, Colores.color2);
+            ocultar();
+            //mostrar(pnlSubComp);
+            //AbrirHijo(new frmOrdenCompra());
+            //comentario
+        }
+
+        private void btnAgregarUsuario_Click(object sender, EventArgs e)
+        {
+            //comentario
+            ocultar();
+        }
+
+        private void btnModificarUsuario_Click(object sender, EventArgs e)
+        {
+            //comentario
+            ocultar();
+        }
+
+        private void btnAgregarProveedor_Click(object sender, EventArgs e)
+        {
+            //comentario
+            AbrirHijo(new frmProveedorAgregar());
+            lblActual.Text = btnAgregarProveedor.Text;
+            // ocultar();
+        }
+
+        private void btnModificarProveedor_Click(object sender, EventArgs e)
+        {
+            //comentario
+            ocultar();
+        }
+
+        private void btnRepOC_Click(object sender, EventArgs e)
+        {
+            //comentario
+            ocultar();
+        }
+
+        private void btnRepEf_Click(object sender, EventArgs e)
+        {
+            //comentario
+            ocultar();
+
         }
     }
 }

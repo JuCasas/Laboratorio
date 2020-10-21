@@ -36,3 +36,23 @@ C:\Users\N5\Desktop\LAB6Soft\obj\Debug\LAB6Soft.exe
 C:\Users\N5\Desktop\LAB6Soft\obj\Debug\LAB6Soft.pdb
 C:\Users\N5\Desktop\LAB6Soft\obj\Debug\LAB6Soft.frmLogin.resources
 C:\Users\N5\Desktop\LAB6Soft\obj\Debug\LAB6Soft.FrmGestionReportes.resources
+C:\Users\Carlos Calderón\Documents\PUCP\2020-2\LP2\RepositorioC\Git\LABORATORIO6\LAB6Soft\bin\Debug\LAB6Soft.exe.config
+C:\Users\Carlos Calderón\Documents\PUCP\2020-2\LP2\RepositorioC\Git\LABORATORIO6\LAB6Soft\bin\Debug\LAB6Soft.exe
+C:\Users\Carlos Calderón\Documents\PUCP\2020-2\LP2\RepositorioC\Git\LABORATORIO6\LAB6Soft\bin\Debug\LAB6Soft.pdb
+C:\Users\Carlos Calderón\Documents\PUCP\2020-2\LP2\RepositorioC\Git\LABORATORIO6\LAB6Soft\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Carlos Calderón\Documents\PUCP\2020-2\LP2\RepositorioC\Git\LABORATORIO6\LAB6Soft\obj\Debug\LAB6Soft.csprojAssemblyReference.cache
+C:\Users\Carlos Calderón\Documents\PUCP\2020-2\LP2\RepositorioC\Git\LABORATORIO6\LAB6Soft\obj\Debug\formsLab6.frmActualizarTipoCambio.resources
+C:\Users\Carlos Calderón\Documents\PUCP\2020-2\LP2\RepositorioC\Git\LABORATORIO6\LAB6Soft\obj\Debug\LAB6Soft.FrmGestionReportes.resources
+C:\Users\Carlos Calderón\Documents\PUCP\2020-2\LP2\RepositorioC\Git\LABORATORIO6\LAB6Soft\obj\Debug\LAB6Soft.frmLogin.resources
+C:\Users\Carlos Calderón\Documents\PUCP\2020-2\LP2\RepositorioC\Git\LABORATORIO6\LAB6Soft\obj\Debug\LAB6Soft.frmMenuPrincipal.resources
+C:\Users\Carlos Calderón\Documents\PUCP\2020-2\LP2\RepositorioC\Git\LABORATORIO6\LAB6Soft\obj\Debug\formsLab6.frmProveedorAgregar.resources
+C:\Users\Carlos Calderón\Documents\PUCP\2020-2\LP2\RepositorioC\Git\LABORATORIO6\LAB6Soft\obj\Debug\LAB6Soft.FrmReporteActividadOperador.resources
+C:\Users\Carlos Calderón\Documents\PUCP\2020-2\LP2\RepositorioC\Git\LABORATORIO6\LAB6Soft\obj\Debug\LAB6Soft.FrmReporteMetodoPago.resources
+C:\Users\Carlos Calderón\Documents\PUCP\2020-2\LP2\RepositorioC\Git\LABORATORIO6\LAB6Soft\obj\Debug\LAB6Soft.FrmReporteOrdenCompra.resources
+C:\Users\Carlos Calderón\Documents\PUCP\2020-2\LP2\RepositorioC\Git\LABORATORIO6\LAB6Soft\obj\Debug\LAB6Soft.frmSubMenu.resources
+C:\Users\Carlos Calderón\Documents\PUCP\2020-2\LP2\RepositorioC\Git\LABORATORIO6\LAB6Soft\obj\Debug\LAB6Soft.Properties.Resources.resources
+C:\Users\Carlos Calderón\Documents\PUCP\2020-2\LP2\RepositorioC\Git\LABORATORIO6\LAB6Soft\obj\Debug\LAB6Soft.csproj.GenerateResource.cache
+C:\Users\Carlos Calderón\Documents\PUCP\2020-2\LP2\RepositorioC\Git\LABORATORIO6\LAB6Soft\obj\Debug\LAB6Soft.csproj.CoreCompileInputs.cache
+C:\Users\Carlos Calderón\Documents\PUCP\2020-2\LP2\RepositorioC\Git\LABORATORIO6\LAB6Soft\obj\Debug\LAB6Soft.csproj.CopyComplete
+C:\Users\Carlos Calderón\Documents\PUCP\2020-2\LP2\RepositorioC\Git\LABORATORIO6\LAB6Soft\obj\Debug\LAB6Soft.exe
+C:\Users\Carlos Calderón\Documents\PUCP\2020-2\LP2\RepositorioC\Git\LABORATORIO6\LAB6Soft\obj\Debug\LAB6Soft.pdb
