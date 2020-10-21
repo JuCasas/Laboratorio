@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LAB6Soft {
-    public partial class frmBuscarProveedor : Form {
-        public frmBuscarProveedor() {
+    public partial class frmModificarProveedor : Form {
+        public frmModificarProveedor() {
             InitializeComponent();
         }
     }
